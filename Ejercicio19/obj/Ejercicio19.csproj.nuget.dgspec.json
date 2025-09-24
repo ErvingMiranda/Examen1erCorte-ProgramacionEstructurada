@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte\\Ejercicio19\\Ejercicio19.csproj": {}
+    "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte-ProgramacionEstructurada\\Ejercicio19\\Ejercicio19.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte\\Ejercicio19\\Ejercicio19.csproj": {
+    "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte-ProgramacionEstructurada\\Ejercicio19\\Ejercicio19.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte\\Ejercicio19\\Ejercicio19.csproj",
+        "projectUniqueName": "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte-ProgramacionEstructurada\\Ejercicio19\\Ejercicio19.csproj",
         "projectName": "Ejercicio19",
-        "projectPath": "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte\\Ejercicio19\\Ejercicio19.csproj",
+        "projectPath": "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte-ProgramacionEstructurada\\Ejercicio19\\Ejercicio19.csproj",
         "packagesPath": "C:\\Users\\ervin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte\\Ejercicio19\\obj\\",
+        "outputPath": "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte-ProgramacionEstructurada\\Ejercicio19\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

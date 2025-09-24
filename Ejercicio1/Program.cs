@@ -12,6 +12,7 @@ class Program
     static void Main()
     {
         string opcion = "";
+        Console.Clear();
         Console.WriteLine("Bienvenido al contador de accesos.");
         Console.WriteLine("Escribí 'ejecutar' para correr el método, o 'salir' para terminar.");
 

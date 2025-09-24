@@ -1,0 +1,15 @@
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte-ProgramacionEstructurada\Ejercicio4\bin\Debug\net9.0\Ejercicio4.exe
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte-ProgramacionEstructurada\Ejercicio4\bin\Debug\net9.0\Ejercicio4.deps.json
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte-ProgramacionEstructurada\Ejercicio4\bin\Debug\net9.0\Ejercicio4.runtimeconfig.json
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte-ProgramacionEstructurada\Ejercicio4\bin\Debug\net9.0\Ejercicio4.dll
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte-ProgramacionEstructurada\Ejercicio4\bin\Debug\net9.0\Ejercicio4.pdb
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte-ProgramacionEstructurada\Ejercicio4\obj\Debug\net9.0\Ejercicio4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte-ProgramacionEstructurada\Ejercicio4\obj\Debug\net9.0\Ejercicio4.AssemblyInfoInputs.cache
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte-ProgramacionEstructurada\Ejercicio4\obj\Debug\net9.0\Ejercicio4.AssemblyInfo.cs
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte-ProgramacionEstructurada\Ejercicio4\obj\Debug\net9.0\Ejercicio4.csproj.CoreCompileInputs.cache
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte-ProgramacionEstructurada\Ejercicio4\obj\Debug\net9.0\Ejercicio4.sourcelink.json
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte-ProgramacionEstructurada\Ejercicio4\obj\Debug\net9.0\Ejercicio4.dll
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte-ProgramacionEstructurada\Ejercicio4\obj\Debug\net9.0\refint\Ejercicio4.dll
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte-ProgramacionEstructurada\Ejercicio4\obj\Debug\net9.0\Ejercicio4.pdb
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte-ProgramacionEstructurada\Ejercicio4\obj\Debug\net9.0\Ejercicio4.genruntimeconfig.cache
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte-ProgramacionEstructurada\Ejercicio4\obj\Debug\net9.0\ref\Ejercicio4.dll

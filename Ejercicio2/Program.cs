@@ -9,45 +9,69 @@ class Programa
 {
     static void Main()
     {
-        CalcularAreaRectangulo();
+        bool continuar = true;
+
+        while (continuar)
+        {
+            Console.Clear();
+            CalcularAreaRectangulo();
+
+            Console.Write("\nPresione una tecla para reiniciar o [Esc] para salir... ");
+            var tecla = Console.ReadKey(true);
+
+            if (tecla.Key == ConsoleKey.Escape)
+            {
+                continuar = false;
+            }
+        }
     }
 
     static void CalcularAreaRectangulo()
     {
         try
         {
-            // Variables locales
             Console.Write("Ingrese la base del rectángulo: ");
             string entradaBase = Console.ReadLine();
 
-            // Se intenta convertir con soporte a decimales usando cultura invariante
+            // Permite tanto punto como coma
+            entradaBase = entradaBase.Replace(',', '.');
             double baseRectangulo = double.Parse(entradaBase, CultureInfo.InvariantCulture);
 
             Console.Write("Ingrese la altura del rectángulo: ");
             string entradaAltura = Console.ReadLine();
-            double alturaRectangulo = double.Parse(entradaAltura, CultureInfo.InvariantCulture); // Permite que el separador decimal sea punto (.) en lugar de coma
+
+            entradaAltura = entradaAltura.Replace(',', '.');
+            double alturaRectangulo = double.Parse(entradaAltura, CultureInfo.InvariantCulture);
+
+            // Validación: deben ser > 0
+            if (baseRectangulo <= 0 || alturaRectangulo <= 0)
+            {
+                MostrarMensaje("Error: La base y la altura deben ser mayores que cero.", ConsoleColor.Red);
+                return;
+            }
 
             // Cálculo local
             double area = baseRectangulo * alturaRectangulo;
-            Console.WriteLine($"El área del rectángulo es: {area}");
+            MostrarMensaje($"Éxito: El área del rectángulo es {Math.Round(area, 2)}", ConsoleColor.Green);
         }
         catch (FormatException)
         {
-            Console.WriteLine(" Error: Debe ingresar un número válido (use punto como separador decimal, ejemplo: 10.5).");
+            MostrarMensaje("Error: Debe ingresar un número válido (ejemplo: 10.5 o 10,5).", ConsoleColor.Red);
         }
-        catch (OverflowException) // por si el numero es demasiado grande o pequeño para el double
+        catch (OverflowException)
         {
-            Console.WriteLine(" Error: El número ingresado es demasiado grande o demasiado pequeño.");
+            MostrarMensaje("Error: El número ingresado es demasiado grande o demasiado pequeño.", ConsoleColor.Red);
         }
-        catch (Exception ex) // se usa para tener mas control y muestra mas detalle del error
+        catch (Exception ex)
         {
-            Console.WriteLine($" Ocurrió un error inesperado: {ex.Message}");
+            MostrarMensaje($"Error inesperado: {ex.Message}", ConsoleColor.Red);
         }
     }
+
+    static void MostrarMensaje(string mensaje, ConsoleColor color)
+    {
+        Console.ForegroundColor = color;
+        Console.WriteLine(mensaje);
+        Console.ResetColor();
+    }
 }
-
-
-
-
-
-

@@ -8,69 +8,112 @@ using System.Globalization;
 class Programa
 {
     // Variable global: define la escala de conversión
-    static string escalaConversion;
+    static string escalaConversion = "CtoF"; // valor por defecto
 
     static void Main()
     {
-        try
+        bool continuar = true;
+
+        while (continuar)
         {
-            // Preguntar al usuario qué conversión desea
-            Console.WriteLine("Seleccione la escala de conversión:");
-            Console.WriteLine("1. Celsius → Fahrenheit");
-            Console.WriteLine("2. Fahrenheit → Celsius");
-            Console.Write("Opción (1/2): ");
+            Console.Clear();
+            MostrarMenu();
+
+            Console.Write("\nSeleccione una opción (1-3): ");
             string opcion = Console.ReadLine();
 
-            if (opcion == "1")
-                escalaConversion = "CtoF";
-            else if (opcion == "2")
-                escalaConversion = "FtoC";
-            else
-                throw new ArgumentException("Opción inválida. Debe ser 1 o 2."); //Esto es útil para validar entradas y evitar que el programa siga corriendo con datos incorrectos.
+            switch (opcion)
+            {
+                case "1":
+                    escalaConversion = "CtoF";
+                    ProcesarConversion();
+                    Pausa();
+                    break;
 
-            // Pedir la temperatura
-            Console.Write("Ingrese la temperatura: ");
+                case "2":
+                    escalaConversion = "FtoC";
+                    ProcesarConversion();
+                    Pausa();
+                    break;
+
+                case "3":
+                    continuar = false;
+                    break;
+
+                default:
+                    Mensaje("Error: opción inválida. Elija 1, 2 o 3.", ConsoleColor.Red);
+                    Pausa();
+                    break;
+            }
+        }
+    }
+
+    static void MostrarMenu()
+    {
+        Console.WriteLine("=== Conversor de Temperatura ===");
+        Console.WriteLine("1) Celsius a Fahrenheit");
+        Console.WriteLine("2) Fahrenheit a Celsius");
+        Console.WriteLine("3) Salir");
+    }
+
+    static void ProcesarConversion()
+    {
+        try
+        {
+            Console.Write("\nIngrese la temperatura: ");
             string entrada = Console.ReadLine();
 
-            // Intentar convertir a número decimal (punto como separador decimal)
-            double temperatura = double.Parse(entrada, CultureInfo.InvariantCulture);
+            // Acepta coma o punto como separador decimal
+            entrada = entrada.Replace(',', '.');
+            double valor = double.Parse(entrada, CultureInfo.InvariantCulture);
 
-            // Hacer la conversión usando la variable global
-            double resultado = ConvertirTemperatura(temperatura);
-            Console.WriteLine($"Resultado de la conversión ({escalaConversion}): {resultado:F2}");
+            double resultado = ConvertirTemperatura(valor);
+
+            if (escalaConversion == "CtoF")
+            {
+                // Ej: "25.00 Celsius son 77.00 Fahrenheit"
+                Mensaje($"{valor:F2} Celsius son {resultado:F2} Fahrenheit", ConsoleColor.Green);
+            }
+            else // FtoC
+            {
+                Mensaje($"{valor:F2} Fahrenheit son {resultado:F2} Celsius", ConsoleColor.Green);
+            }
         }
         catch (FormatException)
         {
-            Console.WriteLine("Error: debe ingresar un número válido (ejemplo: 36.5 con punto decimal).");
+            Mensaje("Error: ingrese un número válido (ej.: 36.5 o 36,5).", ConsoleColor.Red);
         }
         catch (OverflowException)
         {
-            Console.WriteLine("Error: el número ingresado es demasiado grande o pequeño.");
-        }
-        catch (ArgumentException ex)
-        {
-            Console.WriteLine(" Error " + ex.Message);
+            Mensaje("Error: el número ingresado es demasiado grande o pequeño.", ConsoleColor.Red);
         }
         catch (Exception ex)
         {
-            Console.WriteLine($" Ocurrió un error inesperado: {ex.Message}");
+            Mensaje($"Error inesperado: {ex.Message}", ConsoleColor.Red);
         }
     }
 
     static double ConvertirTemperatura(double valor)
     {
-        // Usa la variable global escalaConversion
         if (escalaConversion == "CtoF")
-        {
-            return (valor * 9 / 5) + 32; // Celsius → Fahrenheit
-        }
+            return (valor * 9.0 / 5.0) + 32.0;      // Celsius → Fahrenheit
         else if (escalaConversion == "FtoC")
-        {
-            return (valor - 32) * 5 / 9; // Fahrenheit → Celsius
-        }
+            return (valor - 32.0) * 5.0 / 9.0;      // Fahrenheit → Celsius
         else
-        {
             throw new InvalidOperationException("La escala de conversión global no es válida.");
-        }
+    }
+
+    static void Mensaje(string texto, ConsoleColor color)
+    {
+        var prev = Console.ForegroundColor;
+        Console.ForegroundColor = color;
+        Console.WriteLine(texto);
+        Console.ForegroundColor = prev;
+    }
+
+    static void Pausa()
+    {
+        Console.Write("\nPresione cualquier tecla para continuar...");
+        Console.ReadKey(true); // pausa con Write (sin salto) y sin eco
     }
 }
