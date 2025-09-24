@@ -1,0 +1,14 @@
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte\Ejercicio15\bin\Debug\net9.0\Ejercicio15.exe
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte\Ejercicio15\bin\Debug\net9.0\Ejercicio15.deps.json
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte\Ejercicio15\bin\Debug\net9.0\Ejercicio15.runtimeconfig.json
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte\Ejercicio15\bin\Debug\net9.0\Ejercicio15.dll
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte\Ejercicio15\bin\Debug\net9.0\Ejercicio15.pdb
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte\Ejercicio15\obj\Debug\net9.0\Ejercicio15.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte\Ejercicio15\obj\Debug\net9.0\Ejercicio15.AssemblyInfoInputs.cache
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte\Ejercicio15\obj\Debug\net9.0\Ejercicio15.AssemblyInfo.cs
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte\Ejercicio15\obj\Debug\net9.0\Ejercicio15.csproj.CoreCompileInputs.cache
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte\Ejercicio15\obj\Debug\net9.0\Ejercicio15.dll
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte\Ejercicio15\obj\Debug\net9.0\refint\Ejercicio15.dll
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte\Ejercicio15\obj\Debug\net9.0\Ejercicio15.pdb
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte\Ejercicio15\obj\Debug\net9.0\Ejercicio15.genruntimeconfig.cache
+C:\Users\ervin\Documents\2doSemestre\ProgramaciónEstructurada\Tareas\Examen1erCorte\Ejercicio15\obj\Debug\net9.0\ref\Ejercicio15.dll
