@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+
 /*  
-    6.	Juego de intentos con variable global
+    6. Juego de intentos con variable global
     Crea un programa que use una variable global para almacenar
     el número de intentos de adivinar un número secreto. 
     Cada intento se registra y se muestra. 
@@ -8,49 +10,63 @@
 
 class Program
 {
-    //Creamos la variable global
+    // Variable global para contar intentos
     public static int intentos = 0;
+
+    // Variable global para historial de intentos
+    public static List<string> historial = new List<string>();
 
     static void Main()
     {
-        //La variable numeroSecreto se genera aleatoriamente entre 1 y 10
+        // Genera número secreto entre 1 y 100
         Random randint = new Random();
-        int numeroSecreto = randint.Next(1, 11);
+        int numeroSecreto = randint.Next(1, 101);
         int numeroadivinado;
 
-        Console.WriteLine("Adivina el número secreto entre 1 y 10.");
-        //Creamos un bucle para validaciones de entrada y para repetir el juego hasta que se acierte
+        Console.WriteLine("Adivina el número secreto entre 1 y 100.");
+
         do
         {
-            Console.Write("Introduce un nunmero: ");
+            Console.Write("Introduce un número: ");
             string entrada = Console.ReadLine() ?? "";
 
-            //validacion basica
+            intentos++;
+
             if (!int.TryParse(entrada, out numeroadivinado))
             {
-                //Incrementamos el contador de intentos cuando la entrada no es valida
-                intentos++;
-
                 Console.WriteLine("Por favor, introduce un número válido.");
-
+                historial.Add($"{intentos}. Entrada inválida: \"{entrada}\"");
                 continue;
             }
-            //Incrementamos el contador de intentos cuando se acierta o se falla
-            intentos++; 
 
-            if (numeroadivinado != numeroSecreto)
+            if (numeroadivinado < 1 || numeroadivinado > 100)
             {
-                Console.WriteLine("Numero incorrecto. Intenta de nuevo.");
+                Console.WriteLine("El número debe estar entre 1 y 100.");
+                historial.Add($"{intentos}. {numeroadivinado} (fuera de rango)");
+            }
+            else if (numeroadivinado < numeroSecreto)
+            {
+                Console.WriteLine("Muy bajo. Intenta de nuevo.");
+                historial.Add($"{intentos}. {numeroadivinado}: Muy bajo");
+            }
+            else if (numeroadivinado > numeroSecreto)
+            {
+                Console.WriteLine("Muy alto. Intenta de nuevo.");
+                historial.Add($"{intentos}. {numeroadivinado}: Muy alto");
             }
             else
             {
-                Console.WriteLine($"Acertaste! Numero de intentos: {intentos}");
+                Console.WriteLine($"\n¡Acertaste! El número secreto era {numeroSecreto}.");
+                historial.Add($"{intentos}. {numeroadivinado}: Correcto");
+                Console.WriteLine($"Número de intentos: {intentos}");
 
+                Console.WriteLine("\nHistorial de intentos:");
+                foreach (string h in historial)
+                {
+                    Console.WriteLine(h);
+                }
             }
-        }
-        //El bucle se repite hasta que se acierte el numero
-        while (numeroadivinado != numeroSecreto);
 
-
+        } while (numeroadivinado != numeroSecreto);
     }
 }

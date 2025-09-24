@@ -5,62 +5,66 @@
     el usuario ingrese la contraseña correcta.
 */
 using System;
+
 class Program
 {
     // Variable global
     static bool sesionIniciada = false;
+
     static void Main(string[] args)
     {
-        // Contraseña correcta predefinida
-        string contraseñaCorrecta = "contraseña123"; // Contraseña correcta
-        //contador de intentos e intentos maximos permitidos.
+        string contraseñaCorrecta = "contraseña123";
         int intentos = 0;
-        int maxIntentos = 3;
+        const int maxIntentos = 3;
 
-        // Ciclo hasta que la contraseña sea correcta o se excedan los intentos
-        while (!sesionIniciada && intentos < maxIntentos)
+        while (true)
         {
-            Console.WriteLine("Ingrese la contraseña para iniciar sesión:");
-            string contraseñaIngresada = Console.ReadLine();
-            // Validar entrada vacía, nula o espacios y cuenta como intento fallido
-            if (string.IsNullOrWhiteSpace(contraseñaIngresada))
-            {
-                Console.WriteLine("La contraseña no puede estar vacía.");
-                intentos++;
-                continue;
-            }
-            if (contraseñaIngresada == contraseñaCorrecta)
+            Console.Clear();
+            Console.Write("Ingrese la contraseña para iniciar sesión: ");
+            string entrada = Console.ReadLine();
+
+            bool vacia = string.IsNullOrWhiteSpace(entrada);
+            bool correcta = !vacia && entrada == contraseñaCorrecta;
+
+            if (correcta)
             {
                 sesionIniciada = true;
-                Console.WriteLine("Sesión iniciada correctamente.");
-                break;
+                Console.WriteLine("\nSesión iniciada correctamente.");
+                break; // no se limpia cuando es correcta
             }
+
+            intentos++;
+
+            if (vacia)
+                Console.WriteLine("\nLa contraseña no puede estar vacía. Intente de nuevo.");
             else
-            {
-                Console.WriteLine("Contraseña incorrecta. Intente de nuevo.");
-                intentos++;
-            }
+                Console.WriteLine("\nContraseña incorrecta. Intente de nuevo.");
+
+            Console.WriteLine($"Intentos usados: {intentos} de {maxIntentos}");
+            Pausa();
+
+            if (intentos >= maxIntentos)
+                break;
         }
 
-        // Si se excedieron los intentos, mostrar mensaje y cerrar el programa
-        if (!sesionIniciada && intentos >= maxIntentos)
-        {
-            Console.WriteLine("Has excedido el número máximo de intentos. El programa se cerrará.");
-            Environment.Exit(0);
-        }
-
-        //Mensajes de salida dependiendo del estado de la variable sesionIniciada
+        Console.WriteLine("\n================================");
         if (sesionIniciada)
         {
-            Console.WriteLine("¡La variable 'sesionIniciada' está en True!");
+            Console.WriteLine("Inicio de sesión exitoso.");
         }
         else
         {
-            Console.WriteLine("No se pudo iniciar sesión. La variable 'sesionIniciada' está en False.");
+            Console.WriteLine("No se pudo iniciar sesión. Has excedido el número máximo de intentos.");
         }
+        Console.WriteLine("Estado final de la sesión: " + (sesionIniciada ? "Iniciada" : "No iniciada"));
+        Console.WriteLine("================================");
 
-        // Mostrar el estado de la sesión
-        Console.WriteLine("Estado de la sesión: " + (sesionIniciada ? "Iniciada" : "No iniciada"));
-        
+        Pausa();
+    }
+
+    static void Pausa()
+    {
+        Console.Write("\nPresione cualquier tecla para continuar...");
+        Console.ReadKey(true);
     }
 }

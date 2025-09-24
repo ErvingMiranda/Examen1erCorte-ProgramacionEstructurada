@@ -36,7 +36,7 @@ class Program
             }
         }
 
-        Console.WriteLine("Presiona cualquier tecla para salir...");
+        Console.Write("Presiona cualquier tecla para salir...");
         Console.ReadKey();
     }
 }

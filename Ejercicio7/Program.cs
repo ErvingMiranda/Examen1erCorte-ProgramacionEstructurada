@@ -30,9 +30,9 @@ class Program
             {
                 Console.Write($"Ingrese la nota {i}: ");
                 double nota = Convert.ToDouble(Console.ReadLine());
-                if (nota < 0 || nota > 10)
+                if (nota < 0 || nota > 100)
                 {
-                    Console.WriteLine("Nota invalida, ingrese una nota entre 0 y 10.");
+                    Console.WriteLine("Nota invalida, ingrese una nota entre 0 y 100.");
                     continue;
                 }
                 suma += nota;
