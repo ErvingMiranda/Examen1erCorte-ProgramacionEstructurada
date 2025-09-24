@@ -1,7 +1,9 @@
 ﻿using System;
-/*  Crea un programa que use una variable global para almacenar
- *  el número de intentos de adivinar un número secreto. 
- *  Cada intento se registra y se muestra. 
+/*  
+    6.	Juego de intentos con variable global
+    Crea un programa que use una variable global para almacenar
+    el número de intentos de adivinar un número secreto. 
+    Cada intento se registra y se muestra. 
  */
 
 class Program

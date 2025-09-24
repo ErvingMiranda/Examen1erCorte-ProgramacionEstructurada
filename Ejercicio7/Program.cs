@@ -1,5 +1,6 @@
-﻿/* Haz un método que calcule el promedio de tres notas 
- * introducidas por el usuario usando solo variables locales.
+﻿/* 7.	Promedio de notas con variables locales
+    Haz un método que calcule el promedio de tres notas 
+    introducidas por el usuario usando solo variables locales.
  */
 using System;
 class Program

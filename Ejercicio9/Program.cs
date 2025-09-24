@@ -1,5 +1,7 @@
-﻿/*	Escribe un método que reciba el radio como parámetro,
- * calcule el perímetro y lo retorne usando únicamente variables locales.
+﻿/*	
+    9.	Perímetro de un círculo con variables locales
+    Escribe un método que reciba el radio como parámetro,
+    calcule el perímetro y lo retorne usando únicamente variables locales.
 */
 using System;
 

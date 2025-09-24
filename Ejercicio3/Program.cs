@@ -1,4 +1,7 @@
-﻿// 3.	Conversor de temperatura con variable global
+﻿/*
+3.	Conversor de temperatura con variable global
+    -Declara una variable global que indique la escala de conversión (ejemplo: Celsius a Fahrenheit). Haz un método que use esa variable para realizar la conversión.
+*/
 using System;
 using System.Globalization;
 

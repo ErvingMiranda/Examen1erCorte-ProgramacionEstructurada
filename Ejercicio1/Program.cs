@@ -1,4 +1,7 @@
-﻿//1.	Contador de accesos global
+﻿/*
+1.	Contador de accesos global
+    -Declara una variable global que almacene el número de veces que se ha ejecutado un método. Cada vez que se llame al método, debe incrementar el contador y mostrarlo en pantalla.
+*/
 using System;
 
 class Program

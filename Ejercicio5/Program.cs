@@ -1,4 +1,7 @@
-﻿// Edad de una persona Con varias locales
+﻿/*
+5.	Edad de una persona con variables locales
+    -Diseña un método que use variables locales para leer el año de nacimiento de una persona y calcule su edad. La edad no debe almacenarse de forma global.
+*/
 using System;
 
 class Programa

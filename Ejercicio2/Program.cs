@@ -1,4 +1,7 @@
-﻿// 2.	Área de un rectángulo con variables locales
+﻿/*
+2.	Área de un rectángulo con variables locales
+    -Crea un método que pida la base y altura de un rectángulo, use variables locales para calcular el área y la imprima en pantalla.
+*/
 using System;
 using System.Globalization;
 

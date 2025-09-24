@@ -1,6 +1,8 @@
-﻿/*	Declara una variable global puntuacion. 
- * Cada vez que se llame al método GanarPuntos, 
- * la puntuación debe aumentar en 10 y mostrarse en pantalla.
+﻿/*
+    10.	Juego de puntuación con variables globales
+    Declara una variable global puntuacion. 
+    Cada vez que se llame al método GanarPuntos, 
+    la puntuación debe aumentar en 10 y mostrarse en pantalla.
  */
 
 using System;

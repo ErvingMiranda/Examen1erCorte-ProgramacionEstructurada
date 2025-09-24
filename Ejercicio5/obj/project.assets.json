@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte\\Ejercicio5\\Ejercicio5.csproj",
+      "projectUniqueName": "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte-ProgramacionEstructurada\\Ejercicio5\\Ejercicio5.csproj",
       "projectName": "Ejercicio5",
-      "projectPath": "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte\\Ejercicio5\\Ejercicio5.csproj",
+      "projectPath": "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte-ProgramacionEstructurada\\Ejercicio5\\Ejercicio5.csproj",
       "packagesPath": "C:\\Users\\ervin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte\\Ejercicio5\\obj\\",
+      "outputPath": "C:\\Users\\ervin\\Documents\\2doSemestre\\ProgramaciónEstructurada\\Tareas\\Examen1erCorte-ProgramacionEstructurada\\Ejercicio5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

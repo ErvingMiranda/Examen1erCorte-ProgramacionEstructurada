@@ -1,4 +1,7 @@
-﻿// 4.	Suma acumulada con variable global
+﻿/*
+4.	Suma acumulada con variable global
+    -Declara una variable global sumaTotal. Cada vez que el usuario ingrese un número (en un método), se debe sumar al acumulado y mostrar el total actualizado.
+*/
 using System;
 using System.Globalization;
 

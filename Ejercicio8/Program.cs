@@ -1,7 +1,9 @@
-﻿/*	Declara una variable global booleana sesionIniciada. 
- * Simula un inicio de sesión que la cambie a true cuando 
- * el usuario ingrese la contraseña correcta.
- * */
+﻿/*
+8.	Control de sesión con variable global
+    Declara una variable global booleana sesionIniciada. 
+    Simula un inicio de sesión que la cambie a true cuando 
+    el usuario ingrese la contraseña correcta.
+*/
 using System;
 class Program
 {
